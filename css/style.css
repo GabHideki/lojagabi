@@ -1,28 +1,217 @@
-header{
-    background-color: rgb(255, 92, 119);
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    padding: 10px 20px;
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
 }
 
-nav ul {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 90px;
+
+    background-color: rgb(241, 47, 117);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    z-index: 1000;
+}
+
+header ul {
     display: flex;
     list-style: none;
+
     padding: 0;
     margin: 0;
-    gap: 20px;
+
+    gap: 30px;
 }
 
-nav a {
+header a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+
+    transition: 0.3s;
 }
 
-nav a:hover{
-    color: white;
+header a:hover {
+    color: whitesmoke;
 }
+
+/* ================= LOGO ================= */
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    flex: 1;
+    margin-top: 90px;
+    background-color: #ffe4ef;
+}
+
+main section{
+    padding: 80px 10%;
+}
+
+main section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 500px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 450px;
+}
+
+.hero a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+
+    background-color: rgb(241, 47, 117);
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.hero-texto {
+    max-width: 500px;
+}
+
+.hero-texto p {
+    line-height: 1.5;
+}
+
+.hero a:hover {
+    background-color: #d81b60;
+    padding: 15px 30px;
+}
+
+.hero-imagem img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #2f2f2f;
+    color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    padding: 30px 20px;
+
+    font-family: "Google Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    gap: 8px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: rgb(241, 47, 117);
+}
+
+/* ================= ICONES ================= */
 
 .material-symbols-outlined {
     font-size: 24px;
