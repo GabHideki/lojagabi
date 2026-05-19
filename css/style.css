@@ -281,3 +281,66 @@ footer a:hover {
     display: inline-block;
     vertical-align: middle;
 }
+
+/* ================= FORMULARIOS ================= */
+
+.formulario{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    width: 700px;
+}
+
+input:focus{
+    border: 2px solid rgb(241, 47, 117);
+    outline: none;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: rgb(241, 47, 117);
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: #333;
+    color: rgb(241, 47, 117);
+}
+
+input{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 12px 24px;
+    
+    background-color: #fff;
+    color: rgb(241, 47, 117);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+label{
+    margin-top: 10px;
+}
+
+.formulario a{
+    color: rgb(241, 47, 117);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.formulario a:hover{
+    color: #333;
+}
