@@ -211,6 +211,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
 
     padding: 30px 20px;
 
@@ -260,7 +261,7 @@ footer ul {
 }
 
 footer p {
-    margin: 0;
+    margin: 0px;
 }
 
 footer a {
@@ -272,6 +273,17 @@ footer a {
 
 footer a:hover {
     color: rgb(241, 47, 117);
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.copyright p{
+    font-size: 14px;
+    color: #ccc;
 }
 
 /* ================= ICONES ================= */
